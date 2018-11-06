@@ -20,6 +20,7 @@ echo "---\nflag: tags\n---" > ${PACKAGE_VERSION}.md
 echo "Updated _config.yml folder with version '$PACKAGE_VERSION'"
 
 # Pulling theme layout and assets
+rm -rf /tmp/theme-repo
 git clone --single-branch -b common-docs-layout $THEME_GIT_REPO /tmp/theme-repo
 # TODO - remove when merged to master
 cp -rf /tmp/theme-repo/common-assets/theme/{_layouts,assets} docs/
