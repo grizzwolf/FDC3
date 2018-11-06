@@ -24,6 +24,7 @@ cp -rf /tmp/theme-repo/common-assets/theme/{_layouts,assets} docs/
 echo "Copied common _layouts and assets folders into docs/"
 
 # Pulling contents from gh-pages branch
+rm -rf gh-pages-docs
 git clone $GH_REPO gh-pages-docs
 cd gh-pages-docs
 echo "Branches"
