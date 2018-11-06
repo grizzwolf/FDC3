@@ -52,8 +52,11 @@ if [ -n "$GH_REPO" ]; then
 	cd ..
 	cp -f gh-pages-docs/CHANGELOG.md docs/
 	echo "Cloned gh-pages branch"
-	# Append new release notes at the top of CHANGELOG.md
-	# Check package.json to see how CHANGELOG.md.new is created
+fi
+
+# Append new release notes at the top of CHANGELOG.md
+# Check package.json to see how CHANGELOG.md.new is created
+if [ -f docs/CHANGELOG.md.new ]; then
 	echo -e "$(cat docs/CHANGELOG.md.new)\n\n$(cat docs/CHANGELOG.md)" > docs/CHANGELOG.md
 	rm -f docs/CHANGELOG.md.new
 	echo "Updated docs/CHANGELOG.md"
