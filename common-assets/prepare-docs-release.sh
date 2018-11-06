@@ -22,7 +22,7 @@ echo "Updated _config.yml folder with version '$PACKAGE_VERSION'"
 # Pulling theme layout and assets
 git clone --single-branch -b common-docs-layout $THEME_GIT_REPO /tmp/theme-repo
 # TODO - remove when merged to master
-cp -rf /tmp/theme-repo/docs/theme/{_layouts,assets} docs/
+cp -rf /tmp/theme-repo/common-assets/theme/{_layouts,assets} docs/
 echo "Copied common _layouts and assets folders into docs/"
 
 # Pulling contents from gh-pages branch
