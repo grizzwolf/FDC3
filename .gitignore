@@ -4,6 +4,7 @@ node_modules
 package-lock.json
 docs/ts
 docs/_layouts
+docs/_includes/common
 docs/assets
 .bundle/
 docs/.sass-cache/
