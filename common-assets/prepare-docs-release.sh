@@ -50,12 +50,15 @@ if [ -n "$GH_REPO" ]; then
 	git checkout gh-pages
 	rm -rf .git
 	cd ..
-	cp -f gh-pages-docs/CHANGELOG.md docs/
 	echo "Cloned gh-pages branch"
 fi
 
 # Append new release notes at the top of CHANGELOG.md
 # Check package.json to see how CHANGELOG.md.new is created
+if [ -f gh-pages-docs/CHANGELOG.md ]; then
+	cp -f gh-pages-docs/CHANGELOG.md docs/
+fi
+
 if [ -f docs/CHANGELOG.md.new ]; then
 	echo -e "$(cat docs/CHANGELOG.md.new)\n\n$(cat docs/CHANGELOG.md)" > docs/CHANGELOG.md
 	rm -f docs/CHANGELOG.md.new
