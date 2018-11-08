@@ -17,7 +17,9 @@
       <span class="logo">
         <img src="/assets/img/FDC3_logo.png" class="alternate" alt="" title="" class="logo-spacing"/>
       </span>
-      {% include banner.html %}
+      {% if not page.hidebanner %}
+        {% include banner.html %}
+      {% endif %}
     </div>
   </div>
 </div>
