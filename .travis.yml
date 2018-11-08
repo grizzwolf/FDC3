@@ -1,5 +1,3 @@
-language: bash
-
 # env:
   # global:
     # travis encrypt GITHUB_USERNAME=....
@@ -7,6 +5,8 @@ language: bash
     # travis encrypt GH_TOKEN=....
     # travis encrypt NPM_TOKEN=...
     # - secure: ""
+
+script: echo "doing nothing here, see deployments below."
 
 deploy:
   - provider: script
