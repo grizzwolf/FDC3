@@ -13,7 +13,7 @@ deploy:
     skip_cleanup: true
     # TODO - replace maoo/fdc3-pages-layout with FDC3/FDC3, as soon as code is contributed
     # script: curl https://raw.githubusercontent.com/maoo/FDC3/common-docs-layout/docs/prepare-docs-release.sh | bash
-    script: mkdir -p docs/_includes ; cp -Rf common-assets/theme/assets docs/ ; cp -Rf common-assets/theme/_layouts docs/ ; cp -Rf common-assets/theme/_includes/common docs/_includes
+    script: bash ./common-assets/prepare-docs-release.sh
     on:
       branch: root-website
   - provider: pages

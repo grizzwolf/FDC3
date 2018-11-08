@@ -1,5 +1,10 @@
 #!/bin/bash
 
+#############################################
+# DEPRECATED
+# use prepare-docs-release.sh for mvn and npm
+#############################################
+
 # TODO - replace with https://github.com/fdc3/FDC3.git before PR gets merged
 THEME_GIT_REPO="https://github.com/maoo/FDC3.git"
 
