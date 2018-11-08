@@ -1,14 +1,14 @@
 <div>
   <ul>
-    <li>
-      <a href="/">{{ site.title }}</a>
+    
+      <h2>{{ site.title }}</h2>
       <div class="column-icons">
         {% for social_icon in site.social_icons %}
           <a href="{{ social_icon.link_url }}" target="_blank">
             <img src="{{ social_icon.image_url }}"/></a>
         {% endfor %}
       </div>
-    </li>
+    
     {% for static_file in site.static_files %}
       {% if static_file.path == '/CHANGELOG.md' %}
         <li>

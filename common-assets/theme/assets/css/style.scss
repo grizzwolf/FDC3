@@ -8,6 +8,23 @@ html, body {
     font-family: 'Roboto', sans-serif;
 
 }
+#left-sidebar.col-lg-3 li{
+	list-style-type: none;
+}
+#left-sidebar a {
+	color: #000000;
+}
+#left-sidebar.col-lg-3 {
+	margin-top: 10px;
+}
+#left-sidebar li {
+	margin-left: 20px;
+}
+h2 {
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 0rem;
+}
 .iconbox {
 	padding: 10px 20px;
     border-radius: 3px;
@@ -31,7 +48,9 @@ html, body {
 	margin-right:auto;
 	float: none;
 }
-
+.container {
+	float: right !important;
+}
 .btn-primary {
 	background-color: #4f4cff;
 	border-color: #2d2add;
@@ -105,8 +124,10 @@ html, body {
 }
 
 .column-icons img {
-	width: 48px;
-	height: 48px;
+	width: 35px;
+	height: 35px;
+	margin-bottom: 20px;
+	margin-top: 10px;
 }
 .column-icons {
 	text-align: center;
