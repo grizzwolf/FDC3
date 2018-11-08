@@ -3,16 +3,12 @@
     # travis encrypt GITHUB_USERNAME=....
     # travis encrypt GITHUB_PASSWORD=....
     # travis encrypt GH_TOKEN=....
-    # travis encrypt NPM_TOKEN=...
-    # - secure: ""
 
 script: echo "doing nothing here, see deployments below."
 
 deploy:
   - provider: script
     skip_cleanup: true
-    # TODO - replace maoo/fdc3-pages-layout with FDC3/FDC3, as soon as code is contributed
-    # script: curl https://raw.githubusercontent.com/maoo/FDC3/common-docs-layout/docs/prepare-docs-release.sh | bash
     script: bash ./common-assets/prepare-docs-release.sh
     on:
       branch: root-website
