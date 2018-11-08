@@ -1,9 +1,7 @@
-language: node_js
-node_js:
-  - 8
+language: bash
 
-env:
-  global:
+# env:
+  # global:
     # travis encrypt GITHUB_USERNAME=....
     # travis encrypt GITHUB_PASSWORD=....
     # travis encrypt GH_TOKEN=....
