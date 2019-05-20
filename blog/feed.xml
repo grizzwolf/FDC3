@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+    <channel>
+        <title>FDC3 Blog</title>
+        <link>https://grizzwolf.github.io/FDC3/FDC3blog</link>
+        <description>The best place to stay up-to-date with the latest FDC3 news and events.</description>
+        <lastBuildDate>Tue, 26 Sep 2017 06:00:00 GMT</lastBuildDate>
+        <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+        <generator>Feed for Node.js</generator>
+        <image>
+            <title>FDC3 Blog</title>
+            <url>https://grizzwolf.github.io/FDC3/FDC3img/fdc3-icon-2019.svg</url>
+            <link>https://grizzwolf.github.io/FDC3/FDC3blog</link>
+        </image>
+        <copyright>Copyright © 2019 FDC3</copyright>
+        <item>
+            <title><![CDATA[Adding RSS Support]]></title>
+            <link>https://grizzwolf.github.io/FDC3/FDC3blog/2017/09/26/adding-rss.html</link>
+            <guid>https://grizzwolf.github.io/FDC3/FDC3blog/2017/09/26/adding-rss.html</guid>
+            <pubDate>Tue, 26 Sep 2017 06:00:00 GMT</pubDate>
+            <description><![CDATA[<p>This is a test post.</p> <p>A whole bunch of other information.</p> ]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Adding RSS Support - RSS Truncation Test]]></title>
+            <link>https://grizzwolf.github.io/FDC3/FDC3blog/2017/09/25/testing-rss.html</link>
+            <guid>https://grizzwolf.github.io/FDC3/FDC3blog/2017/09/25/testing-rss.html</guid>
+            <pubDate>Mon, 25 Sep 2017 06:00:00 GMT</pubDate>
+            <description><![CDATA[<p>1234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890</p>
+<p>This should be truncated.</p>
+]]></description>
+        </item>
+    </channel>
+</rss>
